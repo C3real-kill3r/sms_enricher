@@ -1,14 +1,23 @@
+## [1.0.1]
 
-### CHANGELOG.md
+### Added
+- added a capabilty for SMS retrieval by sender name, allowing filtering of SMS messages from specific senders in while app is running on the background.
 
-```markdown
-# Changelog
+## [1.0.0]
 
-All notable changes to the SMS Enricher plugin will be documented in this file.
+### Added
+- Added functionality to request SMS read permissions from the user.
+- Implemented SMS retrieval by sender name, allowing filtering of SMS messages from specific senders.
 
-## [Unreleased]
+### Fixed
+- Fixed the `MissingPluginException` issue by ensuring method channel functions are properly implemented in Kotlin.
+- Corrected the use of the `ActivityAware` interface to ensure that activity context is correctly managed, especially during permission requests.
 
-## [1.0.0] - 2024-04-12
+### Changed
+- Improved error handling to provide more detailed feedback for permission and retrieval errors.
+
+
+## [0.0.1]
 
 ### Added
 
@@ -18,21 +27,5 @@ All notable changes to the SMS Enricher plugin will be documented in this file.
   - Retrieval of SMS messages based on sender or content filters.
   - On-device data enrichment including sentiment analysis and named entity recognition.
   - Secure data transmission to backend servers via HTTPS.
-
-### Fixed
-
-- Placeholder for bug fixes.
-
-### Deprecated
-
-- Placeholder for deprecated features.
-
-## [0.1.0] - 2024-04-05 (Beta Release)
-
-### Added
-
-- Beta release for testing purposes.
-- Basic SMS retrieval functionality.
-- Preliminary data enrichment logic.
 
 Please refer to this document to keep track of bug fixes, feature enhancements, and significant updates to the SMS Enricher plugin.

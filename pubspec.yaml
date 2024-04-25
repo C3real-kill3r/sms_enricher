@@ -1,16 +1,19 @@
 name: sms_enricher
-description: "A new Flutter plugin project."
-version: 0.0.1
-homepage:
+description: "A comprehensive solution for accessing and processing SMS messages on Android devices. It allows Flutter apps to request user permissions for SMS access, retrieve SMS messages based on specific filters, enrich SMS data on the device, and securely send the processed data to a designated backend server."
+version: 1.0.1
+homepage: "https://github.com/C3real-kill3r/sms_enricher"
 
 environment:
-  sdk: '>=3.2.0 <4.0.0'
+  sdk: '>=3.3.0 <4.0.0'
   flutter: '>=3.3.0'
 
 dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
+  http: ^1.2.1
+  telephony: ^0.2.0
+  shared_preferences: ^2.1.0
 
 dev_dependencies:
   flutter_test:

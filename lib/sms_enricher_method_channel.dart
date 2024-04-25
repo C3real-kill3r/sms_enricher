@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'sms_enricher_platform_interface.dart';
 
@@ -22,11 +21,12 @@ class MethodChannelSmsEnricher extends SmsEnricherPlatform {
 
   @override
   Future<bool> sendToBackend(List<dynamic> enrichedMessages, String endpointUrl,
-      String userEmail) async {
+      String userEmail, String organizationName) async {
     final bool success = await methodChannel.invokeMethod('sendToBackend', {
       'enrichedMessages': enrichedMessages,
       'endpointUrl': endpointUrl,
-      'userEmail': userEmail
+      'userEmail': userEmail,
+      'organizationName': organizationName,
     });
     return success;
   }

@@ -16,6 +16,6 @@ abstract class SmsEnricherPlatform extends PlatformInterface {
 
   Future<bool> requestSmsPermissions();
   Future<List<dynamic>> retrieveSmsMessages({String targetName});
-  Future<bool> sendToBackend(
-      List<dynamic> enrichedMessages, String endpointUrl, String userEmail);
+  Future<bool> sendToBackend(List<dynamic> enrichedMessages, String endpointUrl,
+      String userEmail, String organizationName);
 }
